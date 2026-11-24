@@ -1,1 +1,115 @@
+.form-input
+{
+    display:flex;
+    flex-direction:row;
+    margin-bottom:5px;
+    max-width:590px;
+    gap:20px;
+    
+}
+.form-input label
+{
+    flex: 0 0 85px;
+}
+.form-input input,
+.form-input textarea
+{
+    display:flex;
+    flex-direction:row;
+    flex: 1 1 100%;
+    margin-bottom:5px;
+    background-color: grey;
+}
+@media screen and (max-width: 500px)
+{
+    .form-input
+    {
+        flex-direction:column;
+    }
+    .form-input label
+    {
+        flex: 1;
+    }
+}
+#container
+{
+    border: thick black solid;
+    padding: 10px;
+    max-width: 580px;
+    margin: 0 auto;
+    height: 93vh;
+    background-color: rgb(154, 131, 173);
+    overflow:auto;
+    box-shadow: 5px 5px 5px grey;
+}
+h1
+{
+    font-style:italic;
+    text-align:center;
+}
+#submit
+{
+    flex:auto;
+}
 
+
+
+
+
+
+/*
+Source - https://stackoverflow.com/a/69395781
+Posted by Tushar
+Retrieved 2026-11-18, License - CC BY-SA 4.0
+*/
+
+.count {
+     position: relative;
+     width: 40px;
+     height: 40px;
+     margin-right: 10px;
+     display: inline-block;
+     border: 1px solid #ffc107;
+     border-radius: 50%;
+     font-family: Arial;
+     color: #888;
+}
+ .count span {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 2;
+}
+ .count:after {
+     position: absolute;
+     content: "";
+     background: #fff;
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     left: 5px;
+     top: 5px;
+}
+ .count:before {
+     position: absolute;
+     content: "";
+     border: 20px solid #ffc107;
+     border-radius: 50%;
+     height: 0;
+     width: 0;
+     transform: rotate(45deg);
+}
+ .count.step1:before {
+     border-left-color: transparent;
+     border-bottom-color: transparent;
+     border-right-color: transparent;
+}
+ .count.step2:before {
+     border-left-color: transparent;
+     border-bottom-color: transparent;
+}
+ .count.step3:before {
+     border-left-color: transparent;
+}
+ 
