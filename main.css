@@ -2,14 +2,14 @@
 {
     display:flex;
     flex-direction:row;
-    margin-bottom:5px;
+    margin-bottom:18px;
     max-width:590px;
     gap:20px;
     
 }
 .form-input label
 {
-    flex: 0 0 85px;
+    flex: 0 0 140px;
 }
 .form-input input,
 .form-input textarea
@@ -18,7 +18,7 @@
     flex-direction:row;
     flex: 1 1 100%;
     margin-bottom:5px;
-    background-color: grey;
+    background-color: rgb(211, 211, 211);
 }
 @media screen and (max-width: 500px)
 {
@@ -113,4 +113,10 @@ Retrieved 2026-11-18, License - CC BY-SA 4.0
      border-left-color: transparent;
 }
  
-/* code rot
+/* formTwo */
+
+#talks {
+    display : flex;
+    flex-direction: column;
+}
+
