@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <meta http-equiv="Content-Language" content="en" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="main.css" rel="stylesheet" type="text/css"> 
+    <link href="main.css" rel="stylesheet" type="text/css">
 </head>
 
 <!--
@@ -21,16 +21,29 @@ Additional Requirements for Physical Attendees Registration Form
         </div>
         <h1>Additional Requirements for Physical Attendees Registration</h1>
         <form action="formFour.html" method="get">
+            <div class="form-input">
+                <label for="photo">Photo:</label>
+                <input type="file" id="photo" name="photo" for="photo" onchange="loadPhoto()">
+            </div>
+            <img id="photoPreview" src="">
 
 
 
 
 
-        <input id="submit" type="submit" value="Continue">
+            <input id="submit" type="submit" value="Continue">
         </form>
 
     </div>
+    <script>
+        function loadPhoto() 
+        {
+            input = document.getElementById("photo");
+            photoName = "./images/" + input.files[0].name
+            document.getElementById("photoPreview").src = photoName;
 
+        }
+    </script>
 </body>
 
 </html>

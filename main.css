@@ -7,10 +7,12 @@
     gap:20px;
     
 }
+
 .form-input label
 {
     flex: 0 0 140px;
 }
+
 .form-input input,
 .form-input textarea
 {
@@ -20,6 +22,8 @@
     margin-bottom:5px;
     background-color: rgb(211, 211, 211);
 }
+
+/*Mobile screen dimensions */
 @media screen and (max-width: 500px)
 {
     .form-input
@@ -31,6 +35,21 @@
         flex: 1;
     }
 }
+
+/*Tablet screen dimensions */
+@media screen and (max-width: 999px)
+{
+    .form-input
+    {
+        flex-direction:column;
+    }
+    .form-input label
+    {
+        flex: 1;
+    }
+}
+
+
 #container
 {
     border: thick black solid;
@@ -42,20 +61,23 @@
     overflow:auto;
     box-shadow: 5px 5px 5px grey;
 }
+
 h1
 {
     font-style:italic;
     text-align:center;
 }
+
 #submit
 {
     flex:auto;
 }
 
-
-
-
-
+.centrealign 
+ {
+    display:flex;
+    margin: auto;   
+ }
 
 /*
 Source - https://stackoverflow.com/a/69395781
@@ -112,11 +134,24 @@ Retrieved 2026-11-18, License - CC BY-SA 4.0
  .count.step3:before {
      border-left-color: transparent;
 }
- 
+
+/* formOne */
+
+
 /* formTwo */
 
 #talks {
     display : flex;
     flex-direction: column;
 }
+
+/* formThree */
+ #photoPreview {
+    display:flex;
+    margin: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/* formFour */
 
