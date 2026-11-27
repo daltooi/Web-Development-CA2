@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Attendance Registration Form</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<!--
+Attendance Registration Form
+-->
+
+<body>
+
+    <div id="container">
+        <div class="count step2">
+            <span>2</span>
+        </div>
+
+        <h1>Attendance Registration</h1>
+
+        <form action="additionalRequirements.html" method="get">
+
+
+            <div class="form-input">
+
+                <label>Attendance Type</label>
+                <select name="attendenceType">
+                    <option disabled="" selected="">Select Type</option>
+                    <option value="physical">Physical</option>
+                    <option value="virtual">Virtual</option>
+                </select>
+
+            </div>
+
+            <div class="form-input">
+                <label>Arrival Date: </label>
+                <input type="text" name="arrivalDate">
+            </div>
+
+            <div class="form-input">
+                <label>Preferred Arrival Time: </label>
+                <input type="text" name="arrivalTime">
+            </div>
+
+            <div class="form-input">
+
+                <label>Talks:</label>
+
+                <div class="select_container">
+
+
+                    <input type="checkbox" name="talk" value="webdev">
+                    <label>Web Development:</label>
+
+
+                    <input type="checkbox" name="talk" value="cybersec">
+                    <label>Cyber Security:</label>
+
+
+                    <input type="checkbox" name="talk" value="mobiledev">
+                    <label>Mobile Application Development:</label>
+
+
+                    <input type="checkbox" name="talk" value="ai">
+                    <label>Artificial Intelligence:</label>
+
+
+                    <input type="checkbox" name="talk" value="gamesdev">
+                    <label>Computer Games Development:</label>
+
+
+                    <input type="checkbox" name="talk" value="datasci">
+                    <label>Data Science:</label>
+
+
+                    <input type="checkbox" name="talk" value="cloudcomp">
+                    <label>Cloud Computing:</label>
+
+
+                    <input type="checkbox" name="talk" value="internet">
+                    <label>Internet of Things:</label>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="form-input">
+                <label>Previous Experience</label>
+                <div class="value-display" id="valueDisplay">0</div>
+                <div class="slider-container">
+                    <input type="range" id="rangeSlider" class="slider" min="0" max="10" value="0">
+                </div>
+                <label name="experienceText">Complete Begginer</label>
+            </div>
+
+            <input id="submit" type="submit" value="Continue">
+    </div>
+    </form>
+    <script>// Get the query string (everything after the ?)
+        let params = new URLSearchParams(document.location.search);
+
+        // JavaScript to dynamically update the displayed value
+        const rangeSlider = document.getElementById("rangeSlider");
+        const valueDisplay = document.getElementById("valueDisplay");
+
+        // Update display as the range slider value changes
+        rangeSlider.addEventListener("input", () => {
+            valueDisplay.textContent = rangeSlider.value;
+        });
+
+    </script>
+</body>
+
+</html>

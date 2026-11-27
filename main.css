@@ -1,25 +1,43 @@
-.form-input
-{
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #ffffff;
+}
+
+.form-input {
     display:flex;
     flex-direction:row;
     margin-bottom:18px;
     max-width:590px;
     gap:20px;
+    align-items: flex-start;
     
 }
-.form-input label
-{
+.form-input label {
     flex: 0 0 140px;
 }
 .form-input input,
-.form-input textarea
-{
+.form-input textarea {
     display:flex;
     flex-direction:row;
     flex: 1 1 100%;
     margin-bottom:5px;
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(250, 250, 250);
 }
+
+.form-input input[type="file"] {
+    flex: 0 1 auto;
+    background-color: transparent;
+
+    
+}
+
+.form-input input[type="color"] {
+    flex: 0 1 auto;
+    height: 50px;
+}
+
+
 @media screen and (max-width: 500px)
 {
     .form-input
@@ -31,25 +49,42 @@
         flex: 1;
     }
 }
-#container
-{
-    border: thick black solid;
+#container {
+    border: medium rgb(1, 124, 232) solid;
     padding: 10px;
     max-width: 580px;
     margin: 0 auto;
     height: 93vh;
-    background-color: rgb(154, 131, 173);
+    background-color: rgb(98, 90, 104);
     overflow:auto;
-    box-shadow: 5px 5px 5px grey;
+    border-radius: 7px;
+    
+    
 }
-h1
-{
+
+h1 {
     font-style:italic;
     text-align:center;
 }
-#submit
-{
+
+#submit {
     flex:auto;
+}
+
+/* attendance */
+
+
+.select_container {
+    display : grid;
+    grid-template-columns: max-content auto;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+.select_container input[type="checkbox"] {
+    width: 20px;
+    height : 20px;
 }
 
 
@@ -65,14 +100,15 @@ Retrieved 2026-11-18, License - CC BY-SA 4.0
 
 .count {
      position: relative;
-     width: 40px;
-     height: 40px;
-     margin-right: 10px;
+     width: 80px;
+     height: 80px;
+     margin-right: px;
      display: inline-block;
-     border: 1px solid #ffc107;
+     border: 1px solid #2c8fff;
      border-radius: 50%;
      font-family: Arial;
-     color: #888;
+     color: #2c8fff ;
+     font-size: 30px;
 }
  .count span {
      position: absolute;
@@ -84,17 +120,18 @@ Retrieved 2026-11-18, License - CC BY-SA 4.0
  .count:after {
      position: absolute;
      content: "";
-     background: #fff;
-     width: 30px;
-     height: 30px;
+     background: #000000;
+     width: 60px;
+     height: 60px;
      border-radius: 50%;
-     left: 5px;
-     top: 5px;
+     left: 10px;
+     top: 10px;
+     
 }
  .count:before {
      position: absolute;
      content: "";
-     border: 20px solid #ffc107;
+     border: 40px solid #2c8fff;
      border-radius: 50%;
      height: 0;
      width: 0;
@@ -113,10 +150,5 @@ Retrieved 2026-11-18, License - CC BY-SA 4.0
      border-left-color: transparent;
 }
  
-/* formTwo */
 
-#talks {
-    display : flex;
-    flex-direction: column;
-}
 

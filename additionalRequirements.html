@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Additional Requirements for Physical Attendees Registration Form</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<!--
+Additional Requirements for Physical Attendees Registration Form
+-->
+
+<body>
+
+    <div id="container">
+        <div class="count step3">
+            <span>3</span>
+        </div>
+        <h1>Additional Requirements for Physical Attendees Registration</h1>
+
+        <form action="review.html" method="get">
+
+            <div class="form-input">
+                <label>Passport Number: </label>
+                <input type="text">
+            </div>
+
+            <div class="form-input">
+                <label>Photo: </label>
+                <input type="file">
+            </div>
+
+            <div class="form-input">
+                <label>Dietry Requirements: </label>
+                <select name="dietryRequirements">
+                    <option disabled="" selected="">select Type</option>
+                    <option value="none">None</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-input">
+                <label>Accessibility Requirements: </label>
+                <input type="text">
+            </div>
+
+            <div class="form-input">
+                <label>Badge color: </label>
+                <input type ="color">
+            </div>
+
+
+
+
+
+
+            <input id="submit" type="submit" value="Continue">
+        </form>
+
+    </div>
+
+</body>
+
+</html>
