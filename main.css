@@ -16,6 +16,7 @@ body {
 .form-input label {
     flex: 0 0 140px;
 }
+
 .form-input input,
 .form-input textarea {
     display:flex;
@@ -28,8 +29,6 @@ body {
 .form-input input[type="file"] {
     flex: 0 1 auto;
     background-color: transparent;
-
-    
 }
 
 .form-input input[type="color"] {
@@ -37,7 +36,7 @@ body {
     height: 50px;
 }
 
-
+/*Mobile screen dimensions */
 @media screen and (max-width: 500px)
 {
     .form-input
@@ -49,6 +48,19 @@ body {
         flex: 1;
     }
 }
+/*Tablet screen dimensions */
+@media screen and (max-width: 999px)
+{
+    .form-input
+    {
+        flex-direction:column;
+    }
+    .form-input label
+    {
+        flex: 1;
+    }
+}
+
 #container {
     border: medium rgb(1, 124, 232) solid;
     padding: 10px;
@@ -73,13 +85,11 @@ h1 {
 
 /* attendance */
 
-
 .select_container {
     display : grid;
     grid-template-columns: max-content auto;
     flex-direction: column;
     gap: 5px;
-    
 }
 
 .select_container input[type="checkbox"] {
@@ -87,10 +97,10 @@ h1 {
     height : 20px;
 }
 
-
-
-
-
+.centrealign {
+    display:flex;
+    margin: auto;
+}
 
 /*
 Source - https://stackoverflow.com/a/69395781
@@ -149,6 +159,20 @@ Retrieved 2026-11-18, License - CC BY-SA 4.0
  .count.step3:before {
      border-left-color: transparent;
 }
- 
 
+
+/* formOne */
+
+/* formTwo */
+
+
+/* formThree */
+ #photoPreview {
+    display:flex;
+    margin: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/* formFour */
 

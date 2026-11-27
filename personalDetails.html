@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
     <title>Personal Information Registration Form</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -8,55 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="main.css" rel="stylesheet" type="text/css">
 </head>
-
-<!--
-Personal Information Registration Form
--->
-
 <body>
-
     <div id="container">
         <div class="count step1">
             <span>1</span>
         </div>
-        
         <h1>Personal Information Registration</h1>
-
-        <form action="attendance.html" method="get">
+        <form action="formTwo.html" method="get">
             <div class="form-input">
                 <label>Forename:</label>
                 <input type="text" name="forename">
             </div>
-
             <div class="form-input">
                 <label>Surname:</label>
                 <input type="text" name="surname">
             </div>
-
             <div class="form-input">
                 <label>Email address:</label>
                 <input type="text" name="email">
             </div>
-
             <div class="form-input">
                 <label>Telephone Number:</label>
-                <input type="text" name="telephone_number">
+                <input type="text" name="phone" id="phone">
             </div>
-
             <div class="form-input">
                 <label>Date of birth</label>
-                <input type="text" name="forename">
+                <input type="text" name="dob" id="dob">
             </div>
-
             <div class="form-input">
                 <label>Personal or portfolio website:</label>
-                <input type="text" name="forename">
+                <input type="text" name="portfolio" id="portfolio">
             </div>
-
             <div class="form-input">
                 <label>Nationality: </label>
                 <select name="country">
-
                     <option disabled="" selected="">Select Country</option>
                     <option value="af">Afghanistan</option>
                     <option value="al">Albania</option>
@@ -255,13 +239,11 @@ Personal Information Registration Form
                     <option value="ye">Yemen</option>
                     <option value="zm">Zambia</option>
                     <option value="zw">Zimbabwe</option>
-
                 </select>
             </div>
-
-            <input id="submit" type="submit" value="Continue">
+            <input class="centrealign" id="submit" type="submit" value="Continue">
+        </form>
     </div>
-    </form>
 </body>
-
+</html>
 </html>
